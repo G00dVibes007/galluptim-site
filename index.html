@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GALLUPTIM LLC</title>
+<meta name="description" content="GALLUPTIM LLC is an independent mobile app and game studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e1116;
+    --panel: #161b22;
+    --line: #262d38;
+    --text: #e8ecf1;
+    --muted: #9aa4b2;
+    --accent: #3ddc97;
+    --accent-ink: #062016;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  header { border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 18px; padding-bottom: 18px; gap: 16px; flex-wrap: wrap; }
+  .brand { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 1.25rem; letter-spacing: .04em; color: var(--text); text-decoration: none; }
+  .brand span { color: var(--accent); }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 20px; font-size: .95rem; }
+  nav a:hover { color: var(--text); }
+  .hero { padding: 72px 0 56px; }
+  .hero h1 { font-family: "Space Grotesk", sans-serif; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: 0 0 16px; }
+  .hero p { color: var(--muted); font-size: 1.1rem; max-width: 620px; margin: 0 0 28px; }
+  .btn { display: inline-block; background: var(--accent); color: var(--accent-ink); font-weight: 600; padding: 12px 22px; border-radius: 8px; text-decoration: none; }
+  section { padding: 48px 0; border-top: 1px solid var(--line); }
+  h2 { font-family: "Space Grotesk", sans-serif; font-size: 1.6rem; margin: 0 0 24px; }
+  .apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+  .card h3 { margin: 0 0 6px; font-family: "Space Grotesk", sans-serif; font-size: 1.2rem; }
+  .tag { display: inline-block; font-size: .75rem; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 2px 10px; margin-bottom: 12px; }
+  .card p { color: var(--muted); margin: 0; }
+  .info { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+  .info div { color: var(--muted); }
+  .info strong { display: block; color: var(--text); margin-bottom: 4px; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: .9rem; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/">GALLUPTIM <span>LLC</span></a>
+    <nav>
+      <a href="#apps">Apps</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <h1>Small apps.<br>Big good vibes.</h1>
+    <p>GALLUPTIM LLC is an independent mobile app and game studio. We build fun, simple apps and games for Android, with iOS on the way.</p>
+    <a class="btn" href="https://play.google.com/store/apps/developer?id=g00dVibes07">See our apps on Google Play</a>
+  </div>
+
+  <section id="apps">
+    <div class="wrap">
+      <h2>Our apps</h2>
+      <div class="apps">
+        <div class="card">
+          <span class="tag">Social</span>
+          <h3>Vibe Chat</h3>
+          <p>A retro terminal-style chat app. Join chatrooms, talk with people, and earn MARKS, all with an old-school computer look.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Puzzle</span>
+          <h3>Merge Climb</h3>
+          <p>A relaxing offline puzzle game. Merge matching tiles to climb higher and beat your best score, no internet needed.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Adventure</span>
+          <h3>Ships of Fortune</h3>
+          <p>Captain your ship, refit your fleet, and sail in search of fortune on the high seas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About us</h2>
+      <p style="color:var(--muted);max-width:700px;margin:0">GALLUPTIM LLC is a Pennsylvania limited liability company that designs, develops, and publishes mobile apps and games. Our apps are published on Google Play under the developer name g00dVibes07.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="info">
+        <div><strong>Company</strong>GALLUPTIM LLC</div>
+        <div><strong>Email</strong><a href="mailto:adminapps4757@gmail.com">adminapps4757@gmail.com</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> GALLUPTIM LLC. All rights reserved.</span>
+    <a href="/privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
